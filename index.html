@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Karina!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Welcome to Karina's Birthday Game!</h1>
+        <p>Pick the correct gift to reveal a special birthday message!</p>
+        <button id="start-game">Start Game</button>
+        <div id="game-area" style="display:none;">
+            <h2>Choose the Right Gift</h2>
+            <div class="gifts">
+                <div class="gift" onclick="checkGift(this)" data-correct="false">🎁</div>
+                <div class="gift" onclick="checkGift(this)" data-correct="true">🎉</div>
+                <div class="gift" onclick="checkGift(this)" data-correct="false">🎂</div>
+            </div>
+        </div>
+        <div id="message" style="display:none;">
+            <h1>Happy Birthday, Karina! 🎈</h1>
+            <p>Wishing you a wonderful birthday filled with joy and blessings!</p>
+            <p>With love, from Bernike ❤️</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
